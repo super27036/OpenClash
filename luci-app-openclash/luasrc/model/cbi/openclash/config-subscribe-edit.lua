@@ -102,10 +102,15 @@ o = s:option(Value, "convert_address", translate("Convert Address"))
 o.rmempty     = true
 o.description = font_red..bold_on..translate("Note: There is A Risk of Privacy Leakage in Online Convert")..bold_off..font_off
 o:depends("sub_convert", "1")
-o:value("https://api.dler.io/sub", translate("api.dler.io")..translate("(Default)"))
+
+-- 添加地址选项
+o:value("http://subconverterback.frp.super27034.top:25500/sub", translate("SUPER")..translate("(Default)"))
+o:value("https://api.dler.io/sub", translate("api.dler.io")..translate("(api.dler.io)"))
 o:value("https://api.wcc.best/sub", translate("api.wcc.best"))
-o.default = "https://api.dler.io/sub"
-o.placeholder = "https://api.dler.io/sub"
+
+-- 设置默认地址为你的地址
+o.default = "http://subconverterback.frp.super27034.top:25500/sub"
+o.placeholder = "http://subconverterback.frp.super27034.top:25500/sub"
 
 ---- Template
 o = s:option(ListValue, "template", translate("Template Name"))
