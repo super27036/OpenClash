@@ -105,6 +105,7 @@ o:depends("sub_convert", "1")
 
 -- 添加地址选项
 o:value("http://subconverterback.frp.super27034.top:25500/sub", translate("SUPER")..translate("(Default)"))
+o:value("https://api.asailor.org/sub", translate("api.asailor.org"))
 o:value("https://api.dler.io/sub", translate("api.dler.io")..translate("(api.dler.io)"))
 o:value("https://api.wcc.best/sub", translate("api.wcc.best"))
 
